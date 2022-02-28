@@ -1,0 +1,136 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* scrollbar  */
+::-webkit-scrollbar {
+    width: 0px;
+}
+.container,.container_01
+{
+    height: 100vh;
+    width: 100vw;
+    border-bottom: 1px solid #000;
+    background-image: linear-gradient(to left top, rgb(255, 0, 0),rgb(30, 255, 0),rgb(98, 0, 255),rgba(255, 0, 234, 0.795));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: col 10s linear infinite;
+}
+h1,p
+{
+    color: #fff;
+    animation: col 5s linear infinite;
+}
+@keyframes col {
+    0%
+    {
+        filter: blur(0px)hue-rotate(0deg);
+    }
+    100%
+    {
+        filter: blur(0px)hue-rotate(360deg);
+    }
+}
+.container .container_0, .container_01 .container_01_0
+{
+    height: 95%;
+    width: 95%;
+    background: url(./image/bg-0.jpg) no-repeat;
+    background-size: 100% 100%;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 10px;
+    box-shadow: 15px 6px 31px 0px rgba(0,0,0,1);
+    -webkit-box-shadow: 15px 6px 31px 0px rgba(0,0,0,1);
+    -moz-box-shadow: 15px 6px 31px 0px rgba(0,0,0,1);
+    overflow: hidden;
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; */
+}
+/* .container .container_0 .content, .app {
+    position: relative;
+    top: 20%;
+    left: 35%;
+    height: 300px;
+    width: 350px;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 10px;
+    background: rgba(253, 253, 253, 0.205);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(0, 0, 0);
+} */
+.container .container_0 .menu{
+    width: 100%;
+    height: 10%;
+    position: relative;
+    top: 0px;
+    border-bottom: 2px solid rgb(255, 255, 255);
+    border-radius: 10px;
+    background-image: linear-gradient(to left top, rgba(255, 0, 0, 0.075),rgba(30, 255, 0, 0.082),rgba(98, 0, 255, 0.068),rgba(255, 0, 234, 0.075));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+.container .container_0 .menu ul {
+    margin-left: 60%;
+}
+.container .container_0 .menu ul li{
+    list-style: none;
+    display: inline-block;
+}
+.container .container_0 .menu ul li a,h3{
+    text-decoration: none;
+    display: block;
+    font-size: 22px;
+    font-weight: 500px;
+    font-family: 'Shizuru', cursive;
+    text-transform: uppercase;
+    margin-left: 25px;
+    color: rgb(255, 255, 255);
+    transition: color 0.3s ease;
+}
+.container_01 .container_01_0 {
+    background: url(./image/bg-7.jpg) no-repeat;
+    background-size: 100% 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container_01 .container_01_0 .owl-carousel {
+    width: 80%;
+}
+.container_01 .container_01_0 .owl-carousel .item {
+    height: 250px;
+    /*width: 300px; */
+    background: rgba(255, 255, 255, 0.212);
+    border: 2px solid #fff;
+    border-radius: 10px;
+}
+.owl-dots{
+    text-align: center;
+    margin-top: 20px;
+}
+.owl-dot{
+    height: 13px;
+    width: 13px;
+    margin: 0 5px;
+    outline: none!important;
+    border-radius: 50%;
+    border: 2px solid #f00!important;
+    transition: all 0.3s ease;
+}
+.owl-dot.active{
+    width: 35px;
+    border-radius: 14px;
+}
+.owl-dot.active,
+.owl-dot:hover{
+    background: #f00!important;
+}
